@@ -5,6 +5,7 @@ import 'package:flutter_recipe_app/recipe_menu.dart';
 import 'package:flutter_recipe_app/recipe_title.dart';
 
 // 이미지, 폰트 파일까지 만들고 pubspec.yaml 적용 완료
+// 21) 예제를 보고 따라하고 완성하였지만, 가상 디바이스와 연동이 안되는 문제가 발생했다.
 void main() {
   runApp(const MyApp());
 }
@@ -54,10 +55,13 @@ class RecipePage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(
           horizontal: 20,
         ), // 11) 가로방향만 적용할거라 symmetric. 다시 레시피 메뉴로 돌아가서,
-        child: Column(
+        // 17) Column을 ListView로 바꿔준다. 세로스크롤 적용
+        child: ListView(
           // 4) 가로정렬을 써준다. 주축기준으로 왼쪽, 위쪽 / 교차쪽 start, end, center
-          crossAxisAlignment: CrossAxisAlignment.start, // 4) 뼈대 작성 완료
-
+          // 17) crossAxisAlignment: CrossAxisAlignment.start, // 4) 뼈대 작성 완료
+          // 17) ListView에는 crossAxisAlignment:가 없기 때문에 지워준다!
+          // 17) 다시 가상 디바이스를 실행해 보면 아래의 빗금이 사라지고 없다!!! 정상적으로 스크롤 됨.
+          // 18) 아래 레시피 아이템의 이미지와 텍스트들이 너무 붙어 있어서 리스트아이템리스트에서 패딩으로 조정해주기.
           children: [
             RecipeTitle(),
             RecipeMenu(),
