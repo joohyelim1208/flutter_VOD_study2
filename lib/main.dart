@@ -6,6 +6,7 @@ import 'package:flutter_recipe_app/recipe_title.dart';
 
 // 이미지, 폰트 파일까지 만들고 pubspec.yaml 적용 완료
 // 21) 예제를 보고 따라하고 완성하였지만, 가상 디바이스와 연동이 안되는 문제가 발생했다.
+/// 22) 레시피 앱 만들기 완성!
 void main() {
   runApp(const MyApp());
 }

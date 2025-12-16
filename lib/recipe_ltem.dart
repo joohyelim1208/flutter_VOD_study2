@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; 
 
 class RecipeListItem extends StatelessWidget {
   // 14) 각각 리스트 아이템의 사진과 글자들이 조금씩 다른걸 수정하려고 함
