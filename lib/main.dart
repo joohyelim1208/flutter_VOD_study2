@@ -14,7 +14,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      // 4) 레시피 타이틀 구성.
+      theme: ThemeData(
+        fontFamily: 'NotoSansKR', // 4) yaml에 올린 폰트 스타일 적용
+      ),
+      home: RecipePage(),
+    );
   }
 }
 
