@@ -61,9 +61,14 @@ class RecipePage extends StatelessWidget {
           children: [
             RecipeTitle(),
             RecipeMenu(),
-            RecipeListItem(),
-            RecipeListItem(),
-            RecipeListItem(), // 3) 각 위젯들이 잘 배치 되었는지 가상 디바이스로 확인.
+            // 15) 마리 틀을 짜둔! 레시피리스트아이템 ()안에 값을 넣어준다.
+            // 15) 하지만 출력이 되지 않음! 왜냐면 레시피아이템에서 path변수 선언만 했지 이미지 경로나 문자열들을 반영을 안했음. 다시 레시피아이템으로 돌아가서,
+            RecipeListItem('assets/image/coffee.jpg', 'Coffee'),
+            RecipeListItem('assets/image/burger.jpg', 'burger'),
+            RecipeListItem(
+              'assets/image/pizza.jpg',
+              'pizza',
+            ), // 3) 각 위젯들이 잘 배치 되었는지 가상 디바이스로 확인.
             // 3) 각각의 위젯이 text로 배치된 것을 확인. 좌측 가운데 정렬되어 있음
           ],
         ),
