@@ -13,3 +13,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp();
   }
 }
+
+// 1) 기본 Scaffold 페이지 세팅
+// 2) lib 폴더에 각각의 위젯을 만들 파일을 생성한다! title / menu / item
+// 1) RecipePage 커맨드+. 'missing override' 선택
+class RecipePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
+  }
+}
