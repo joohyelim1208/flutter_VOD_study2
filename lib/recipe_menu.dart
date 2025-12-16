@@ -4,7 +4,7 @@ class RecipeMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // 5) 레시피 메뉴바 구성
-    // 11) Row도 패딩으로 감싸주기. 레시피 메뉴 구현 완료!!!
+    // 11) Row도 패딩으로 감싸주기. 레시피 메뉴 구현 완료!!! 12) 레시피 위젯 아이템
     return Padding(
       padding: const EdgeInsets.only(top: 20),
       child: Row(
